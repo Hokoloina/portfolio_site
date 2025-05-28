@@ -165,3 +165,66 @@ h2 {
 .profile-picture:hover {
   transform: scale(1.1);
 }
+
+.proof-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.proof-item {
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.proof-item img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.proof-item img:hover {
+  transform: scale(1.05);
+}
+
+.proof-item p {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.title-with-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 2.5rem;
+  color: var(--primary);
+  font-family: var(--font-title);
+}
+
+.icon {
+  font-size: 2.5rem;
+  animation: floatIcons 3s infinite ease-in-out;
+}
+
+.icon-1 {
+  animation-delay: 0s;
+}
+
+.icon-2 {
+  animation-delay: 0.5s;
+}
+
+.icon-3 {
+  animation-delay: 1s;
+}
+
+@keyframes floatIcons {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
