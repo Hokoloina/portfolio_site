@@ -7,7 +7,7 @@
   <title>Portfolio - Accueil</title>
   <link href="style.css" rel="stylesheet">
 </head>
-<body class="bg-blue-50 text-gray-800 font-sans relative overflow-hidden">
+<body class="bg-blue-50 text-gray-800 font-sans relative">
   
 <svg class="absolute top-0 left-0 w-full h-32 text-blue-100" viewBox="0 0 1440 320">
   <path fill="currentColor" fill-opacity="1"
@@ -60,7 +60,7 @@
 
       </div>
       <div class="photo-container">
-        <img src="img/stage.jpg" alt="Ho Koloina" class="profile-picture" />
+        <img src="img/cyber.png" alt="Ho Koloina" class="cyber-picture" />
       </div>
     </section>
     <section class="presentation">
@@ -70,12 +70,12 @@
         <p>J’aime <strong>voyager, découvrir de nouvelles cultures, prendre des photos et explorer la nature</strong>. Je participe aussi à des <strong>activités universitaires</strong> comme la randonnée, la plongée et le longe-côte. Mon engagement dans des causes qui ont du sens me pousse à être <strong>étudiante ambassadrice du développement durable</strong> à l’université de <strong>Caen</strong>.</p>
       </div>
       <div class="photo-container">
-        <img src="img/photo.jpg" alt="Ho Koloina" class="profile-picture" />
+        <img src="img/voyage.jpg" alt="Ho Koloina" class="voyage-picture" />
       </div>
     </section>
   </main>
   <footer class="bg-blue-600 text-white text-center p-4 mt-10">
-    Portfolio Ho Koloina RAVELSOSON 2025
+    Portfolio Ho Koloina RAVELOSON 2025
   </footer>
 
 <script>
@@ -92,6 +92,38 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script>
+
+<!-- Modal pour agrandir les images -->
+<div id="image-modal" class="modal">
+  <span id="modal-close" class="modal-close">&times;</span>
+  <img id="modal-image" class="modal-content" src="" alt="Image agrandie">
+</div>
+
+<script>
+// Ouvre le modal pour les images "stage" et "bac"
+document.querySelectorAll('.stage-picture, .bac-picture').forEach(img => {
+  img.addEventListener('click', function() {
+    const modal = document.getElementById('image-modal');
+    const modalImg = document.getElementById('modal-image');
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  });
+});
+
+// Ferme le modal en cliquant sur le bouton de fermeture
+document.getElementById('modal-close').addEventListener('click', function() {
+  document.getElementById('image-modal').style.display = "none";
+});
+
+// Optionnel : fermer le modal en cliquant en dehors de l'image
+window.addEventListener('click', function(event) {
+  const modal = document.getElementById('image-modal');
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});
+</script>
+
 
 </body>
 </html>
