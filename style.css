@@ -365,18 +365,19 @@ h2 {
 
 /* Conteneur de détails caché par défaut */
 .project-details {
-  max-height: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
   overflow: hidden;
   opacity: 0;
-  transition: max-height 0.5s ease, opacity 0.5s ease;
+  max-height: 0;
 }
 
 .project-details.expanded {
+  /* Fixe une hauteur maximale fixe pour forcer l'apparition d'une scrollbar */
   max-height: 1000px;
-  /* ajuster en fonction du contenu */
+  overflow-y: auto;
   opacity: 1;
-  transition: max-height 0.5s ease, opacity 0.5s ease;
 }
+
 
 /* === RESPONSIVITÉ GLOBALE === */
 @media (max-width: 768px) {
@@ -404,11 +405,7 @@ h2 {
     max-width: 300px;
   }
   
-  /* Pour les projets, on veut que le contenu complet s'affiche. On surcharge la limite de hauteur */
-  .project-details.expanded {
-    max-height: none;  /* Supprime la limite fixe sur mobile */
-    overflow: visible;
-  }
+  
   
   /* Ajustement de la grille pour les preuves si besoin */
   .proof-container {

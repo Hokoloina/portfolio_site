@@ -31,10 +31,11 @@
       <!-- Bouton "Voir plus" -->
       <button class="toggle-details">Voir plus</button>
       <!-- Contenu caché par défaut -->
-      <div class="project-details">
+      <div class="project-details" style="overflow-y: auto;">
         <p><strong>Description :</strong> Face aux menaces numériques omniprésentes, il est essentiel de comprendre les
           risques liés à l'utilisation des services numériques et d’adopter des pratiques sécurisées. Ce projet vise à
           sensibiliser les utilisateurs aux cybermenaces courantes et aux solutions adaptées pour les prévenir.</p>
+
         <p><strong>Objectifs :</strong></p>
         <ul>
           <li>Approfondir les connaissances en cybersécurité via une approche éducative et expérimentale.</li>
@@ -43,6 +44,18 @@
           <li>Présenter une synthèse sous forme de diapositives lors d'une séance orale encadrée.</li>
           <li>Effectuer un TP individuel de découverte sur les failles de sécurité des mots de passe.</li>
         </ul>
+
+        <p><strong>Apprentissages critiques :</strong></p>
+        <ul>
+          <li>Comprendre l'architecture et les fondements des systèmes numériques ainsi que les principes du codage de
+            l'information, des communications et de l'Internet.</li>
+          <li>Maîtriser les rôles et les principes fondamentaux des systèmes d'exploitation pour interagir avec eux dans
+            la configuration et l'administration des réseaux et des services associés.</li>
+          <li>Identifier et signaler les dysfonctionnements du réseau local grâce à une observation rigoureuse et des
+            outils de diagnostic appropriés.</li>
+        </ul>
+
+
         <p><strong>Tâches réalisées :</strong></p>
         <ul>
           <li>Auto-formation via le MOOC de l’ANSSI pour acquérir une base solide en cybersécurité.</li>
@@ -52,11 +65,44 @@
           <li>TP individuel de découverte “Capture the Flag” sur les conséquences d’une mauvaise gestion des mots de
             passe.</li>
         </ul>
+
         <p><strong>Résultat :</strong> Ce projet m’a permis de mieux comprendre l’importance de la cybersécurité,
           d’acquérir un vocabulaire technique et de découvrir la méthodologie des tests d’intrusion.</p>
-        <p><strong>Autoévaluation :</strong> J’ai trouvé ce projet passionnant, notamment la partie "Capture the Flag"
-          qui était à la fois ludique et éducative. Le MOOC m’a aidé à structurer mon raisonnement et approfondir mes
-          connaissances. Il est crucial de toujours respecter les réglementations en matière de cybersécurité.</p>
+
+        <p><strong>Autoévaluation :</strong></p>
+        <p><em>Évaluation globale :</em> Ce projet a été passionnant et enrichissant. Il m’a permis de développer des
+          compétences pratiques en cybersécurité, en recherche et en travail collaboratif. Cependant, j’ai rencontré
+          quelques difficultés liées à la gestion du temps pour compléter le MOOC et les modules de formation, ainsi
+          qu’aux échéances serrées concernant la préparation de la présentation orale et de l’examen écrit. Mes notes
+          prises durant les modules m’ont permis de regagner du temps lors de l'examen écrit, et la répartition des
+          parties de présentation au sein du groupe a facilité la coordination lors de l'oral.</p>
+
+        <table style="width:100%; border-collapse: collapse;" border="1">
+          <thead>
+            <tr>
+              <th style="padding: 8px; text-align: left;">Problème rencontré</th>
+              <th style="padding: 8px; text-align: left;">Solution envisagée ou envisageable</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding: 8px;">Gestion du temps pour suivre le MOOC et compléter les modules, le contenu étant
+                long.</td>
+              <td style="padding: 8px;">Prévoir de terminer au moins un module et demie par semaine.</td>
+            </tr>
+            <tr>
+              <td style="padding: 8px;">Pression des échéances pour la préparation de la présentation orale.</td>
+              <td style="padding: 8px;">Répartir clairement les grandes parties entre les membres du groupe et effectuer
+                des répétitions.</td>
+            </tr>
+            <tr>
+              <td style="padding: 8px;">Reprendre et assimiler les bases pour l’examen écrit sans repartir de zéro.</td>
+              <td style="padding: 8px;">Prendre des notes détaillées pendant les modules afin de faciliter la révision
+                et accélérer la préparation de l'examen.</td>
+            </tr>
+          </tbody>
+        </table>
+
         <p><strong>Preuves :</strong></p>
         <div class="proof-container">
           <!-- Miniature Diaporama -->
@@ -261,7 +307,8 @@
         <ul>
           <li>Mise en place de scripts Python pour interroger l'API et récupérer les données en JSON.</li>
           <li>Création de fiches et d'analyses statistiques réparties en trois modules : <code>md_to_html.py</code>,
-            <code>pokefiche.py</code> et <code>stats.py</code>.</li>
+            <code>pokefiche.py</code> et <code>stats.py</code>.
+          </li>
           <li>Mise en place d'un système de gestion des erreurs (pour les requêtes et le traitement des données).</li>
           <li>Ajout de fonctionnalités optionnelles pour enrichir la présentation des statistiques, même si certaines
             parties (mise en cache et traductions complètes) n'ont pas été entièrement finalisées.</li>
@@ -306,42 +353,70 @@
         <i class="fas fa-signal"></i> Mesure et caractérisation d'un signal ou un système
       </h2>
       <button class="toggle-details">Voir plus</button>
-      
+
       <div class="project-details">
         <p><strong>Description :</strong>
-          Ce projet s'est déroulé en deux temps : dans un premier temps, nous avons réalisé un TP individuel et deux TP en binôme pour nous familiariser avec des outils d'exploration radioélectrique et l'utilisation de MATLAB. Ces TP portaient sur :
+          Ce projet s'est déroulé en deux temps : dans un premier temps, nous avons réalisé un TP individuel et deux TP
+          en binôme pour nous familiariser avec des outils d'exploration radioélectrique et l'utilisation de MATLAB. Ces
+          TP portaient sur :
           <br>
           - TP1 : Certification MATLAB OnRamp ;
           <br>
-          - TP2 : Prise en main des outils d'exploration et de mesure radioélectrique (étude du spectre FM commercial avec RTL-SDR et HDSDR) ;
+          - TP2 : Prise en main des outils d'exploration et de mesure radioélectrique (étude du spectre FM commercial
+          avec RTL-SDR et HDSDR) ;
           <br>
           - TP3 : Extraction des données RDS en utilisant MATLAB/Simulink et le récepteur RTL-SDR.
           <br><br>
-          Par la suite, en groupe de quatre, nous avons travaillé sur un projet complet d'exploration des émissions radioélectriques, avec pour objectif l'exploration du spectre de la téléphonie mobile autour de l'IUT. Ce travail de groupe devait être présenté dans un rapport détaillé et inclure notamment de la géolocalisation, des mesures spectrales et l'analyse des systèmes de transmission.
+          Par la suite, en groupe de quatre, nous avons travaillé sur un projet complet d'exploration des émissions
+          radioélectriques, avec pour objectif l'exploration du spectre de la téléphonie mobile autour de l'IUT. Ce
+          travail de groupe devait être présenté dans un rapport détaillé et inclure notamment de la géolocalisation,
+          des mesures spectrales et l'analyse des systèmes de transmission.
         </p>
-        
+
         <p><strong>Objectifs :</strong></p>
         <ul>
-          <li>Se familiariser avec MATLAB et l’exploration du spectre radio grâce à des outils comme RTL-SDR et HDSDR.</li>
-          <li>Extraire et décoder des données numériques (RDS) issues de la FM commerciale à l’aide de scripts MATLAB et Simulink.</li>
-          <li>Analyser divers paramètres spectraux, tels que l’OBW, les réglages de la FM et la numérisation des signaux radio.</li>
-          <li>Pour le projet de groupe : explorer le spectre de la téléphonie mobile en combinant mesures, géolocalisation et analyse des bandes de fréquence.</li>
+          <li>Se familiariser avec MATLAB et l’exploration du spectre radio grâce à des outils comme RTL-SDR et HDSDR.
+          </li>
+          <li>Extraire et décoder des données numériques (RDS) issues de la FM commerciale à l’aide de scripts MATLAB et
+            Simulink.</li>
+          <li>Analyser divers paramètres spectraux, tels que l’OBW, les réglages de la FM et la numérisation des signaux
+            radio.</li>
+          <li>Pour le projet de groupe : explorer le spectre de la téléphonie mobile en combinant mesures,
+            géolocalisation et analyse des bandes de fréquence.</li>
         </ul>
-        
+
         <p><strong>Tâches réalisées :</strong></p>
         <ul>
-          <li><em>TP1 – Certification MATLAB OnRamp :</em> Révision des concepts fondamentaux en MATLAB pour préparer la phase d'extraction de données.</li>
-          <li><em>TP2 – Prise en main des outils radio :</em> Découverte du spectre de la FM commerciale à l'aide du RTL-SDR et du logiciel HDSDR. Ce TP nous a permis d'explorer les réglages du spectre (RBW, Sampling Rate, etc.) et de prendre en main la manipulation de l'antenne.</li>
-          <li><em>TP3 – Extraction des données RDS :</em> Utilisation de MATLAB et de Simulink pour capturer et traiter les données RDS issues du signal FM, avec notamment la vérification de la communication entre MATLAB et le RTL-SDR .</li>
-          <li><em>Projet de groupe :</em> Mise en œuvre d’un travail collectif sur l'exploration du spectre de la téléphonie mobile – relevé des mesures spectrales, analyse des bandes, géolocalisation des émetteurs, et rédaction d’un rapport synthétique de 4 pages. Une part d’auto-évaluation et une répartition des rôles ont également été demandées.</li>
+          <li><em>TP1 – Certification MATLAB OnRamp :</em> Révision des concepts fondamentaux en MATLAB pour préparer la
+            phase d'extraction de données.</li>
+          <li><em>TP2 – Prise en main des outils radio :</em> Découverte du spectre de la FM commerciale à l'aide du
+            RTL-SDR et du logiciel HDSDR. Ce TP nous a permis d'explorer les réglages du spectre (RBW, Sampling Rate,
+            etc.) et de prendre en main la manipulation de l'antenne.</li>
+          <li><em>TP3 – Extraction des données RDS :</em> Utilisation de MATLAB et de Simulink pour capturer et traiter
+            les données RDS issues du signal FM, avec notamment la vérification de la communication entre MATLAB et le
+            RTL-SDR .</li>
+          <li><em>Projet de groupe :</em> Mise en œuvre d’un travail collectif sur l'exploration du spectre de la
+            téléphonie mobile – relevé des mesures spectrales, analyse des bandes, géolocalisation des émetteurs, et
+            rédaction d’un rapport synthétique de 4 pages. Une part d’auto-évaluation et une répartition des rôles ont
+            également été demandées.</li>
         </ul>
-        
+
         <p><strong>Résultats :</strong>
-          Ces travaux m'ont permis de maîtriser des matériels rarement utilisés comme le RTL-SDR ainsi que le logiciel HDSDR, et d'appréhender la chaîne complète de la réception radio jusqu'à la démodulation numérique. Malgré quelques difficultés d'appréhension des nouveaux matériels et une moindre perception des signaux (notamment lorsque nous étions éloignés des antennes), nous avons réussi à obtenir des spectres exploitables et à mener à bien l'analyse des signaux FM et mobiles. Le travail en groupe a été enrichissant et a permis de consolider nos compétences en analyse de spectre ainsi qu’en gestion de projet collaboratif.
+          Ces travaux m'ont permis de maîtriser des matériels rarement utilisés comme le RTL-SDR ainsi que le logiciel
+          HDSDR, et d'appréhender la chaîne complète de la réception radio jusqu'à la démodulation numérique. Malgré
+          quelques difficultés d'appréhension des nouveaux matériels et une moindre perception des signaux (notamment
+          lorsque nous étions éloignés des antennes), nous avons réussi à obtenir des spectres exploitables et à mener à
+          bien l'analyse des signaux FM et mobiles. Le travail en groupe a été enrichissant et a permis de consolider
+          nos compétences en analyse de spectre ainsi qu’en gestion de projet collaboratif.
         </p>
-        
+
         <p><strong>Autoévaluation :</strong>
-          J’ai trouvé ce projet à la fois stimulant et formateur. Bien que la prise en main des nouveaux matériels et logiciels ait été difficile au début – notamment en raison d'une faible réception par éloignement des antennes – j’ai pu développer de solides compétences en mesure et analyse de signaux. Le travail en groupe sur l’exploration du spectre de la téléphonie mobile m’a permis d’apprendre à collaborer malgré des imprévus techniques et d'approfondir mes connaissances en géolocalisation des émetteurs. Globalement, ce projet a réellement enrichi mon expérience en instrumentation et en traitement de données radio.
+          J’ai trouvé ce projet à la fois stimulant et formateur. Bien que la prise en main des nouveaux matériels et
+          logiciels ait été difficile au début – notamment en raison d'une faible réception par éloignement des antennes
+          – j’ai pu développer de solides compétences en mesure et analyse de signaux. Le travail en groupe sur
+          l’exploration du spectre de la téléphonie mobile m’a permis d’apprendre à collaborer malgré des imprévus
+          techniques et d'approfondir mes connaissances en géolocalisation des émetteurs. Globalement, ce projet a
+          réellement enrichi mon expérience en instrumentation et en traitement de données radio.
         </p>
         <p><strong>Preuves :</strong></p>
         <div class="proof-container">
@@ -358,7 +433,7 @@
         </div>
       </div>
     </section>
-    
+
 
     <!-- Projet 8 : Mise en place une solution informatique pour l'entreprise -->
     <section class="project-card bg-white p-6 shadow-lg rounded-lg">
@@ -387,7 +462,8 @@
       <div class="project-details">
         <p><strong>Description :</strong> [À compléter]</p>
         <p><strong>Objectif :</strong> [À compléter]</p>
-        <p><strong>Apprentissage critique :</strong> [À compléter]</p>
+        <p><strong>Apprentissage critique :
+          </strong> [À compléter]</p>
         <p><strong>Tâches réalisées :</strong> [À compléter]</p>
         <p><strong>Résultat :</strong> [À compléter]</p>
         <p><strong>Preuves :</strong> [À compléter]</p>
@@ -401,16 +477,18 @@
     Portfolio Ho Koloina RAVELOSON 2025
   </footer>
 
-  <!-- Script pour basculer l'affichage des détails -->
+  <!-- Script unique pour basculer l'affichage des détails -->
   <script>
     document.querySelectorAll('.toggle-details').forEach(function (btn) {
       btn.addEventListener('click', function () {
-        // rechercher l'élément .project-details frère
-        let details = this.nextElementSibling;
+        let details = this.nextElementSibling; // suppose que .project-details est immédiatement après
         if (details.classList.contains('expanded')) {
+          details.style.maxHeight = '0';
           details.classList.remove('expanded');
           this.textContent = "Voir plus";
         } else {
+          // Ici, on peut soit utiliser scrollHeight, soit fixer une hauteur fixe pour forcer le scroll
+          details.style.maxHeight = "1000px"; // ou details.scrollHeight + "px" si ce scrollHeight > 1000
           details.classList.add('expanded');
           this.textContent = "Voir moins";
         }
