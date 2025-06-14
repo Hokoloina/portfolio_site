@@ -392,13 +392,14 @@
 
       <!-- Projet 5 : Traitement des données -->
 
+      <!-- Projet 5 : Traitement des données -->
       <section class="project-card bg-white p-6 shadow-lg rounded-lg">
         <h2 class="text-lg font-bold mb-2">
           <i class="fas fa-database"></i> Traitement des données
         </h2>
         <button class="toggle-details">Voir plus</button>
 
-        <div class="project-details">
+        <div class="project-details" style="overflow-y: auto;">
           <p><strong>Description :</strong>
             Dans le cadre de la SAÉ 1.05, nous devions concevoir un projet de développement pour centraliser et traiter
             des données issues d'une API en ligne (PokeAPI). L'objectif était d'analyser les habitats des Pokémon en
@@ -414,33 +415,75 @@
             <li>Générer automatiquement des pages web en convertissant du Markdown en HTML.</li>
           </ul>
 
+          <!-- Apprentissages critiques ajoutés après les objectifs -->
+          <p><strong>Apprentissages critiques :</strong></p>
+          <ul>
+            <li>Utiliser un système informatique et ses outils.</li>
+            <li>Lire, exécuter, corriger et modifier un programme.</li>
+            <li>Traduire un algorithme dans un langage et pour un environnement donné.</li>
+            <li>Connaître l'architecture et les technologies d'un site Web.</li>
+            <li>Choisir les mécanismes de données adaptés au développement de l'outil et argumenter ses choix.</li>
+            <li>S'intégrer dans un environnement propice au développement et au travail collaboratif.</li>
+          </ul>
+
           <p><strong>Tâches réalisées :</strong></p>
           <ul>
             <li>Mise en place de scripts Python pour interroger l'API et récupérer les données en JSON.</li>
-            <li>Création de fiches et d'analyses statistiques réparties en trois modules : <code>md_to_html.py</code>,
+            <li>Création de fiches et d'analyses statistiques réparties en trois modules : <code>md_to_html.py</code>,
               <code>pokefiche.py</code> et <code>stats.py</code>.
             </li>
             <li>Mise en place d'un système de gestion des erreurs (pour les requêtes et le traitement des données).</li>
-            <li>Ajout de fonctionnalités optionnelles pour enrichir la présentation des statistiques, même si certaines
-              parties (mise en cache et traductions complètes) n'ont pas été entièrement finalisées.</li>
+            <li>Ajout de fonctionnalités optionnelles (notamment la mise en cache et la traduction des données) bien que
+              la partie traduction n'ait pas été finalisée.</li>
           </ul>
 
-          <p><strong>Résultats :</strong>
+          <p><strong>Résultats :</strong></p>
+          <p>
             Le projet a permis d'obtenir une analyse détaillée des habitats Pokémon, avec des statistiques pertinentes
-            et
-            une bonne répartition des types. Même si certaines fonctionnalités n'ont pas été entièrement implémentées,
-            l'essentiel a été démontré et les objectifs techniques ont été largement atteints.
+            et une bonne répartition des types. Même si certaines fonctionnalités, telles que la traduction automatique,
+            n'ont pas été entièrement implémentées, l'essentiel a été démontré et les objectifs techniques ont été
+            largement atteints.
           </p>
 
-          <p><strong>Autoévaluation :</strong>
-            Ce projet m’a permis d'approfondir mes compétences en programmation Python ainsi qu’en traitement et
-            extraction de données via une API. J’ai beaucoup apprécié relever le défi de centraliser ces données et d’en
-            tirer des statistiques, tout en travaillant en équipe malgré quelques difficultés techniques. Dans
-            l’ensemble,
-            cette expérience fut très enrichissante tant sur le plan technique que sur celui du travail collaboratif.
+          <p><strong>Autoévaluation :</strong></p>
+          <p>
+            <em>Évaluation globale :</em>
+            Ce projet m’a permis d'approfondir mes compétences en programmation Python ainsi qu’en extraction et
+            traitement de données via une API. J’ai beaucoup apprécié relever le défi de centraliser ces données pour
+            générer des statistiques. Cependant, la partie traduction n’a pas pu être réalisée, car nous avons rencontré
+            un problème de disponibilité du matériel et de temps, ce qui nous a contraints à effectuer des recherches
+            complémentaires pour proposer une solution alternative.
           </p>
+
+          <table style="width:100%; border-collapse: collapse;" border="1">
+            <thead>
+              <tr>
+                <th style="padding: 8px; text-align: left;">Problème rencontré</th>
+                <th style="padding: 8px; text-align: left;">Solution envisagée ou envisageable</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding: 8px;">La fonctionnalité de traduction automatique n'a pas pu être finalisée en
+                  raison du manque de temps et de ressources adaptées.</td>
+                <td style="padding: 8px;">Utiliser une API de traduction externe (par exemple, Google Translate API) et
+                  prévoir une phase de tests pour intégrer cette fonctionnalité, éventuellement avec l'aide d'un
+                  traducteur pour vérifier la qualité des traductions.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p><strong>Preuves :</strong></p>
+          <div class="proof-container">
+            <a href="pdf/compte_rendu_photometrie.pdf" download class="proof-item">
+              <img src="img/icon.png" alt="Compte rendu PDF">
+              <p>Télécharger le compte rendu PDF</p>
+            </a>
+            <!-- Autre preuve éventuelle ici -->
+          </div>
         </div>
       </section>
+
 
 
       <!-- Projet 6 : Construction d'un réseau informatique pour une petite structure -->
@@ -467,13 +510,12 @@
         </h2>
         <button class="toggle-details">Voir plus</button>
 
-        <div class="project-details">
+        <div class="project-details" style="overflow-y: auto;">
           <p><strong>Description :</strong>
-            Ce projet s'est déroulé en deux temps : dans un premier temps, nous avons réalisé un TP individuel et deux
-            TP
-            en binôme pour nous familiariser avec des outils d'exploration radioélectrique et l'utilisation de MATLAB.
-            Ces
-            TP portaient sur :
+            Ce projet s'est déroulé en deux temps : dans un premier temps, nous avons réalisé un TP individuel, des
+            TP en binôme et un TP en groupe de 6 pour nous familiariser avec des outils d'exploration radioélectrique et
+            l'utilisation de
+            MATLAB. Ces TP portaient sur :
             <br>
             - TP1 : Certification MATLAB OnRamp ;
             <br>
@@ -482,7 +524,7 @@
             <br>
             - TP3 : Extraction des données RDS en utilisant MATLAB/Simulink et le récepteur RTL-SDR.
             <br><br>
-            Par la suite, en groupe de quatre, nous avons travaillé sur un projet complet d'exploration des émissions
+            Avec groupe de six, nous avons travaillé sur le tp 2, un projet complet d'exploration des émissions
             radioélectriques, avec pour objectif l'exploration du spectre de la téléphonie mobile autour de l'IUT. Ce
             travail de groupe devait être présenté dans un rapport détaillé et inclure notamment de la géolocalisation,
             des mesures spectrales et l'analyse des systèmes de transmission.
@@ -493,56 +535,83 @@
             <li>Se familiariser avec MATLAB et l’exploration du spectre radio grâce à des outils comme RTL-SDR et HDSDR.
             </li>
             <li>Extraire et décoder des données numériques (RDS) issues de la FM commerciale à l’aide de scripts MATLAB
-              et
-              Simulink.</li>
+              et Simulink.</li>
             <li>Analyser divers paramètres spectraux, tels que l’OBW, les réglages de la FM et la numérisation des
-              signaux
-              radio.</li>
+              signaux radio.</li>
             <li>Pour le projet de groupe : explorer le spectre de la téléphonie mobile en combinant mesures,
               géolocalisation et analyse des bandes de fréquence.</li>
+          </ul>
+
+          <!-- Apprentissages critiques ajoutés -->
+          <p><strong>Apprentissages critiques :</strong></p>
+          <ul>
+            <li>Mesurer et analyser les signaux.</li>
+            <li>Caractériser des systèmes de transmission élémentaires et découvrir la modélisation mathématique de leur
+              fonctionnement.</li>
+            <li>Déployer des supports de transmission.</li>
+            <li>Communiquer avec un tiers (client, collaborateur, etc.) et adapter son discours et sa langue à son
+              interlocuteur.</li>
           </ul>
 
           <p><strong>Tâches réalisées :</strong></p>
           <ul>
             <li><em>TP1 – Certification MATLAB OnRamp :</em> Révision des concepts fondamentaux en MATLAB pour préparer
-              la
-              phase d'extraction de données.</li>
+              la phase d'extraction de données.</li>
             <li><em>TP2 – Prise en main des outils radio :</em> Découverte du spectre de la FM commerciale à l'aide du
               RTL-SDR et du logiciel HDSDR. Ce TP nous a permis d'explorer les réglages du spectre (RBW, Sampling Rate,
               etc.) et de prendre en main la manipulation de l'antenne.</li>
             <li><em>TP3 – Extraction des données RDS :</em> Utilisation de MATLAB et de Simulink pour capturer et
-              traiter
-              les données RDS issues du signal FM, avec notamment la vérification de la communication entre MATLAB et le
-              RTL-SDR .</li>
+              traiter les données RDS issues du signal FM, avec vérification de la communication entre MATLAB et le
+              RTL-SDR.</li>
             <li><em>Projet de groupe :</em> Mise en œuvre d’un travail collectif sur l'exploration du spectre de la
               téléphonie mobile – relevé des mesures spectrales, analyse des bandes, géolocalisation des émetteurs, et
               rédaction d’un rapport synthétique de 4 pages. Une part d’auto-évaluation et une répartition des rôles ont
               également été demandées.</li>
           </ul>
 
-          <p><strong>Résultats :</strong>
-            Ces travaux m'ont permis de maîtriser des matériels rarement utilisés comme le RTL-SDR ainsi que le logiciel
-            HDSDR, et d'appréhender la chaîne complète de la réception radio jusqu'à la démodulation numérique. Malgré
-            quelques difficultés d'appréhension des nouveaux matériels et une moindre perception des signaux (notamment
-            lorsque nous étions éloignés des antennes), nous avons réussi à obtenir des spectres exploitables et à mener
-            à
-            bien l'analyse des signaux FM et mobiles. Le travail en groupe a été enrichissant et a permis de consolider
-            nos compétences en analyse de spectre ainsi qu’en gestion de projet collaboratif.
+          <p><strong>Résultats :</strong></p>
+          <p>
+            Ces travaux m'ont permis de maîtriser des matériels rarement utilisés comme le RTL-SDR et le logiciel HDSDR,
+            et d'appréhender la chaîne complète de la réception radio jusqu'à la démodulation numérique. Malgré quelques
+            difficultés liées à une faible réception des antennes lorsqu'on était éloigné, nous avons réussi à obtenir
+            des spectres exploitables et à mener à bien l'analyse des signaux FM et mobiles.
           </p>
 
-          <p><strong>Autoévaluation :</strong>
-            J’ai trouvé ce projet à la fois stimulant et formateur. Bien que la prise en main des nouveaux matériels et
-            logiciels ait été difficile au début – notamment en raison d'une faible réception par éloignement des
-            antennes
-            – j’ai pu développer de solides compétences en mesure et analyse de signaux. Le travail en groupe sur
-            l’exploration du spectre de la téléphonie mobile m’a permis d’apprendre à collaborer malgré des imprévus
-            techniques et d'approfondir mes connaissances en géolocalisation des émetteurs. Globalement, ce projet a
-            réellement enrichi mon expérience en instrumentation et en traitement de données radio.
+          <p><strong>Autoévaluation :</strong></p>
+          <p>
+            <em>Évaluation globale :</em> J’ai trouvé ce projet à la fois stimulant et formateur. J'ai pu développer mes
+            compétences en mesure et en analyse de signaux, ainsi qu'en gestion d'instruments de mesure radio.
+            Toutefois, nous avons rencontré deux principaux problèmes : une faible réception par éloignement des
+            antennes et des problèmes d’environnement (Matlab ne fonctionnait pas dans certaines salles, et
+            l’utilisation du logiciel HDSDR posait problème pour entendre correctement la chaîne radio). Grâce aux
+            interventions du professeur, nous avons appris à paramétrer HDSDR correctement et avons changé de salle pour
+            Matlab.
           </p>
+
+          <table style="width:100%; border-collapse: collapse;" border="1">
+            <thead>
+              <tr>
+                <th style="padding: 8px; text-align: left;">Problème rencontré</th>
+                <th style="padding: 8px; text-align: left;">Solution envisagée ou envisageable</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding: 8px;">Faible réception des antennes à cause de l'éloignement.</td>
+                <td style="padding: 8px;">Mettre l’antenne en hauteur, ouvrir les fenêtres pour améliorer la réception,
+                  ou déplacer l'appareil pour obtenir un meilleur signal.</td>
+              </tr>
+              <tr>
+                <td style="padding: 8px;">Problèmes d’utilisation de Matlab dans certaines salles et difficultés avec
+                  HDSDR pour entendre la chaîne radio.</td>
+                <td style="padding: 8px;">Changer de salle pour Matlab et bénéficier de l'aide du professeur pour
+                  paramétrer correctement HDSDR.</td>
+              </tr>
+            </tbody>
+          </table>
+
           <p><strong>Preuves :</strong></p>
           <div class="proof-container">
-            <!-- Llien cliquable sur une image menant à une page complémentaire ou téléchargement -->
-            <!-- Lien pour télécharger le compte rendu  -->
             <a href="pdf/sae22.pdf" download class="proof-item">
               <img src="img/sae22.PNG" alt="Compte rendu du projet de groupe PDF">
               <p>Télécharger le compte rendu du projet de groupe</p>
@@ -562,16 +631,110 @@
           <i class="fas fa-desktop"></i> Mise en place une solution informatique pour l'entreprise
         </h2>
         <button class="toggle-details">Voir plus</button>
-        <div class="project-details">
-          <p><strong>Description :</strong> [À compléter]</p>
-          <p><strong>Objectif :</strong> [À compléter]</p>
-          <p><strong>Apprentissage critique :</strong> [À compléter]</p>
-          <p><strong>Tâches réalisées :</strong> [À compléter]</p>
-          <p><strong>Résultat :</strong> [À compléter]</p>
-          <p><strong>Preuves :</strong> [À compléter]</p>
-          <p><strong>Autocritique :</strong> [À compléter]</p>
+        <div class="project-details" style="overflow-y: auto;">
+          <p><strong>Description :</strong>
+            Instant Weather V2 est un projet individuel en JavaScript visant à afficher les prévisions météorologiques
+            d’une ville saisie par l’utilisateur. Le projet repose sur l’utilisation de l’API Météo Concept (avec son
+            token personnel) associée à l’API Geo du gouvernement français afin de récupérer des données météo et
+            géographiques, présentées de manière dynamique sur une page Web.
+          </p>
+          <p><strong>Objectifs :</strong></p>
+          <ul>
+            <li>Utiliser l’API Météo Concept conformément à sa documentation afin de récupérer les prévisions.</li>
+            <li>Manipuler le DOM pour intégrer dynamiquement du contenu dans une page HTML.</li>
+            <li>Interagir avec la mise en forme de la page via JavaScript pour modifier l’affichage en fonction des
+              données récupérées.</li>
+            <li>Offrir une expérience utilisateur moderne avec un design responsive et accessible.</li>
+            <li>Intégrer des fonctionnalités complémentaires comme le choix du nombre de jours de prévision et des
+              options d’affichage personnalisées.</li>
+          </ul>
+          <p><strong>Apprentissages critiques :</strong></p>
+          <ul>
+            <li>Utiliser un système informatique et ses outils.</li>
+            <li>Lire, exécuter, corriger et modifier un programme.</li>
+            <li>Traduire un algorithme dans un langage et pour un environnement donné.</li>
+            <li>Connaître l'architecture et les technologies d'un site Web.</li>
+            <li>Choisir les mécanismes de gestion de données adaptés au développement de l'outil et argumenter ses
+              choix.</li>
+            <li>S'intégrer dans un environnement propice au développement et au travail collaboratif.</li>
+          </ul>
+          <p><strong>Tâches réalisées :</strong></p>
+          <ul>
+            <li>Reprise du travail réalisé dans le cadre du TD de R2.09 et modification du code pour utiliser un token
+              personnel avec l’API Météo Concept.</li>
+            <li>Implémentation d’un formulaire interactif avec un slider pour choisir le nombre de jours (1 à 7) et des
+              toggles pour afficher des informations complémentaires (latitude, longitude, cumul de pluie, vent moyen,
+              direction du vent).</li>
+            <li>Mise en place d’une fonctionnalité créative : un fond dynamique qui change en fonction de la météo du
+              premier jour, agrémenté d’une animation de nuages en arrière-plan.</li>
+            <li>Développement d’un mode sombre avec persistance des réglages dans le stockage local.</li>
+            <li>Conception d’une interface responsive conforme aux exigences d’accessibilité WCAG AA 2.0.</li>
+          </ul>
+          <p><strong>Résultats :</strong></p>
+          <p>
+            Le site final propose une interface interactive et attrayante, qui permet d’afficher des prévisions
+            détaillées et de bénéficier d’un mode sombre performant. Le projet est déployé sur GitHub Pages et
+            accessible via le lien
+            <a href="https://hokoloina.github.io/TPsae203/" target="_blank">https://hokoloina.github.io/TPsae203/</a>.
+          </p>
+          <p><strong>Autoévaluation :</strong></p>
+          <p>
+            <em>Évaluation globale :</em> Ce projet m’a permis d’approfondir mes compétences en JavaScript et en
+            manipulation du DOM, tout en mettant en œuvre l’utilisation d’APIs. J’ai particulièrement apprécié l’ajout
+            des fonctionnalités interactives (slider, toggles, fond dynamique, mode sombre) qui ont enrichi l’expérience
+            utilisateur. Cependant, plusieurs difficultés techniques sont apparues lors du développement.
+          </p>
+          <table style="width:100%; border-collapse: collapse;" border="1">
+            <thead>
+              <tr>
+                <th style="padding: 8px; text-align: left;">Problème rencontré</th>
+                <th style="padding: 8px; text-align: left;">Solution envisagée ou envisageable</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding: 8px;">Erreur 500 de l'API Météo Concept empêchant la récupération des prévisions.
+                </td>
+                <td style="padding: 8px;">Mettre en place une gestion d'erreur robuste pour afficher un message à
+                  l'utilisateur, vérifier manuellement le fonctionnement de l’API et attendre la résolution du problème
+                  côté serveur.</td>
+              </tr>
+              <tr>
+                <td style="padding: 8px;">Codes météo inconnus non pris en charge (ex.: weather 41, 44, 104, etc.),
+                  causant des erreurs d'affichage.</td>
+                <td style="padding: 8px;">Mettre à jour le mapping dans la variable <code>weatherMap</code> en ajoutant
+                  les nouveaux codes, et prévoir un code par défaut (ex.: "Temps instable") pour gérer les cas non
+                  anticipés.</td>
+              </tr>
+              <tr>
+                <td style="padding: 8px;">Design de la page trop basique et peu attractif.</td>
+                <td style="padding: 8px;">Améliorer le design avec un titre stylisé, une icône météo animée, et une
+                  image de fond dynamique qui change à chaque chargement.</td>
+              </tr>
+              <tr>
+                <td style="padding: 8px;">Absence d’animations entraînant une apparition brutale des résultats.</td>
+                <td style="padding: 8px;">Implémenter une animation d’apparition progressive (fade-in) pour les cartes
+                  météo et ajouter un loader stylisé lors du chargement des données.</td>
+              </tr>
+              <tr>
+                <td style="padding: 8px;">Mode sombre sans réelle distinction visuelle, avec simplement un fond plus
+                  foncé.</td>
+                <td style="padding: 8px;">Revoir le mode sombre en ajoutant des dégradés adaptés et en modifiant le
+                  bouton pour qu’il alterne visuellement entre un emoji soleil (🌞) et lune (🌙), améliorant ainsi le
+                  contraste et l’accessibilité.</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><strong>Preuves :</strong></p>
+          <div class="proof-container">
+            <a href="https://hokoloina.github.io/TPsae203/" target="_blank" class="proof-item">
+              <img src="img/meteo.png" alt="Aperçu du site Instant Weather V2">
+              <p>Voir le site en ligne</p>
+            </a>
+          </div>
         </div>
       </section>
+
 
       <!-- Projet 9 : Projet Intégratif, volets Réseaux/Système, Télécommunication, Mathématiques et anglais -->
       <section class="project-card bg-white p-6 shadow-lg rounded-lg">
@@ -579,18 +742,128 @@
           <i class="fas fa-layer-group"></i> Projet Intégratif, volets Réseaux/Système, Télécommunication, Mathématiques
           et anglais
         </h2>
+
         <button class="toggle-details">Voir plus</button>
-        <div class="project-details">
-          <p><strong>Description :</strong> [À compléter]</p>
-          <p><strong>Objectif :</strong> [À compléter]</p>
-          <p><strong>Apprentissage critique :
-            </strong> [À compléter]</p>
-          <p><strong>Tâches réalisées :</strong> [À compléter]</p>
-          <p><strong>Résultat :</strong> [À compléter]</p>
-          <p><strong>Preuves :</strong> [À compléter]</p>
-          <p><strong>Autocritique :</strong> [À compléter]</p>
+
+        <div class="project-details" style="overflow-y: auto;">
+          <p><strong>Description :</strong>
+            Ce projet final résume et mobilise toutes les ressources étudiées en <strong>réseaux</strong>,
+            <strong>mathématiques</strong>, <strong>télécommunications</strong> et <strong>anglais</strong> durant
+            l’année. Il se compose de la réalisation d’une maquette réseau, la passation d’un QCM sur nos connaissances
+            des réseaux (utilisées lors de la configuration de la maquette), des travaux pratiques en mathématiques et
+            télécom, ainsi qu’une évaluation en anglais portant sur le vocabulaire technique et la rédaction des
+            synthèses de l’année.
+          </p>
+
+          <p><strong>Objectifs :</strong></p>
+          <ul>
+            <li>Concevoir et configurer une maquette réseau en mobilisant les connaissances acquises.</li>
+            <li>Evaluer les notions techniques et pratiques en réseaux.</li>
+            <li>Appliquer des méthodes de calculs et algorithmes issus des cours de mathématiques.</li>
+            <li>Réaliser des mesures et analyses en télécommunications (signal, transmission) et en extraire des résultats pertinents.</li>
+            <li>Réviser et maîtriser le vocabulaire technique en anglais pour rédiger une synthèse de l’année.</li>
+          </ul>
+
+          <p><strong>Apprentissages critiques :</strong></p>
+          <ul>
+            <li>Maîtriser les lois fondamentales de l'électricité afin d'intervenir sur des équipements de réseaux et
+              télécommunications.</li>
+            <li>Comprendre l’architecture et les fondements des systèmes numériques, ainsi que les principes du codage
+              de l’information, des communications et d’Internet.</li>
+            <li>Configurer les fonctions de base du réseau local.</li>
+            <li>Maîtriser les rôles et les principes des systèmes d’exploitation pour la configuration et
+              l’administration des réseaux et services.</li>
+            <li>Identifier les dysfonctionnements du réseau local et savoir les signaler.</li>
+            <li>Installer un poste client et expliquer la procédure mise en place.</li>
+            <li>Mesurer et analyser les signaux.</li>
+            <li>Caractériser des systèmes de transmission élémentaires et découvrir la modélisation mathématique de leur
+              fonctionnement.</li>
+            <li>Déployer des supports de transmission.</li>
+            <li>Communiquer avec un tiers (client, collaborateur, etc.) et adapter son discours et sa langue à son
+              interlocuteur.</li>
+            <li>Connecter les systèmes de ToIP.</li>
+            <li>Utiliser un système informatique et ses outils.</li>
+            <li>Lire, exécuter, corriger et modifier un programme.</li>
+            <li>Traduire un algorithme dans un langage et pour un environnement donné.</li>
+            <li>Connaître l’architecture et les technologies d’un site Web.</li>
+            <li>Choisir les mécanismes de gestion de données adaptés au développement de l’outil et argumenter ses
+              choix.</li>
+            <li>S’intégrer dans un environnement propice au développement et au travail collaboratif.</li>
+          </ul>
+
+          <p><strong>Tâches réalisées :</strong></p>
+          <ul>
+            <li>Configuration et test de la maquette réseau sous Proxmox avec gestion des VLANs et routage inter-VLAN.
+            </li>
+            <li>Résolution de problèmes techniques en réseau via des vérifications sur le brassage en salle et remontée
+              dans la salle du haut pour vérifier la connectivité.</li>
+            <li>Réalisation de calculs mathématiques concernant les polynômes et l’algorithme de convergence.</li>
+            <li>Exécution de TP sur les mesures de signaux et l’analyse des supports de transmission en
+              télécommunications.</li>
+            <li>Révision intensive du vocabulaire technique en anglais et rédaction d'une synthèse de l'année.</li>
+          </ul>
+
+          <p><strong>Résultats :</strong></p>
+          <p>
+            Malgré des difficultés techniques et un manque de temps, les tests en réseau et télécom, ainsi que la
+            rédaction en anglais, ont confirmé l'acquisition des compétences théoriques et pratiques requises. La
+            maquette réseau fonctionne correctement et le QCM a permis de valider les connaissances acquises.
+          </p>
+
+          <p><strong>Autoévaluation :</strong></p>
+          <p>
+            <em>Évaluation globale :</em> Ce projet final fut un véritable challenge, combinant des aspects techniques
+            en réseaux, mathématiques, télécoms et anglais. Les principales difficultés portaient sur le manque de
+            temps, des problèmes de connexion à Proxmox et des contraintes liées à la révision de concepts mathématiques
+            et télécoms de manière autonome. Malgré cela, nous avons su nous adapter en optimisant notre gestion du
+            temps et en cherchant activement des solutions pour résoudre les problèmes techniques rencontrés.
+          </p>
+
+          <table style="width:100%; border-collapse: collapse;" border="1">
+            <thead>
+              <tr>
+                <th style="padding: 8px; text-align: left;">Problème rencontré</th>
+                <th style="padding: 8px; text-align: left;">Solution envisagée ou envisageable</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding: 8px;">Manque de temps en réseau, nécessitant de rester jusqu'à très tard pour
+                  terminer la maquette.</td>
+                <td style="padding: 8px;">Mieux planifier le travail en répartissant les tâches et en établissant un
+                  calendrier précis.</td>
+              </tr>
+              <tr>
+                <td style="padding: 8px;">Problèmes de connexion à Proxmox, nécessitant des vérifications sur le
+                  brassage et déplacements en salle du haut.</td>
+                <td style="padding: 8px;">Établir un protocole de vérification rapide du réseau et envisager une
+                  assistance technique plus réactive.</td>
+              </tr>
+              <tr>
+                <td style="padding: 8px;">Manque de temps pour répondre correctement au QCM en télécommunications.</td>
+                <td style="padding: 8px;">Organiser des séances de révision en groupe avec les autres classmates pour
+                  renforcer les acquis.</td>
+              </tr>
+              <tr>
+                <td style="padding: 8px;">Difficulté à rédiger en anglais et formuler des phrases techniques précises.
+                </td>
+                <td style="padding: 8px;">Utiliser des fiches de vocabulaire et s'exercer régulièrement à structurer des
+                  phrases en anglais.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p><strong>Preuves :</strong></p>
+          <div class="proof-container">
+            <a href="pdf/sae204.pdf" download class="proof-item">
+              <img src="img/sae204.PNG" alt="Compte rendu du projet SAÉ 2.04">
+              <p>Télécharger le compte rendu SAÉ 2.04</p>
+            </a>
+          </div>
         </div>
       </section>
+
+
 
   </main>
 

@@ -1,25 +1,225 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projection</title>
-  <link href="style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projection Globale - Portfolio Ho Koloina RAVELOSON 2025</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Couleurs et variables */
+    :root {
+      --primary: #005f99;
+      --secondary: #8ecae6;
+      --dark: #023047;
+      --light: #caf0f8;
+    }
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, var(--light), var(--secondary));
+      color: var(--dark);
+    }
+    header {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      position: relative;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      animation: fadeIn 2s ease-out;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      animation: fadeIn 2s ease-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    main {
+      padding: 2rem 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    /* Section globale d'évaluation */
+    .section {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+    .section h2 {
+      color: var(--primary);
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    /* Dashboard de progression */
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .progress-card {
+      background: var(--light);
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .progress-card h3 {
+      margin-bottom: 0.5rem;
+    }
+    .progress-bar-container {
+      background: #ddd;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 20px;
+      margin-bottom: 0.5rem;
+    }
+    .progress-bar {
+      background: var(--primary);
+      height: 100%;
+      width: 0%;
+      transition: width 1s ease-in-out;
+      border-radius: 20px;
+    }
+    .progress-details {
+      font-size: 0.9rem;
+    }
+    /* Tableau global d'autoévaluation */
+    table.evaluation-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    table.evaluation-table th,
+    table.evaluation-table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    table.evaluation-table th {
+      background: var(--secondary);
+      color: white;
+    }
+    /* Bouton retour en haut */
+    a.back-to-top {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.5rem 1.5rem;
+      background: var(--primary);
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    a.back-to-top:hover {
+      background: var(--dark);
+    }
+  </style>
 </head>
-<body class="bg-blue-50 text-gray-800 font-sans">
-  <header class="bg-blue-600 text-white p-4 shadow-lg flex justify-between items-center">
-    <h1 class="text-2xl font-bold">Projection</h1>
-    <nav>
-      <a href="index.html" class="hover:underline mx-2">Accueil</a>
-    </nav>
+<body id="top">
+  <header>
+    <h1>Projection Globale</h1>
+    <p>Mon portfolio en un coup d'œil : progrès, défis et apprentissages</p>
   </header>
-  <main class="p-8">
-    <h2 class="text-xl font-semibold mb-4">Évaluation Globale</h2>
-    <p>[À compléter : évaluation globale du portfolio, progrès réalisés, réflexion personnelle]</p>
+
+  <main>
+    <!-- Section d'évaluation globale -->
+    <section class="section">
+      <h2>Évaluation Globale</h2>
+      <p>
+        Cette page synthétise l'ensemble de mes projets réalisés au cours de l'année. Elle reflète l'évolution de mes compétences techniques dans les domaines des réseaux, des mathématiques, des télécommunications et de l'anglais. Grâce à des défis relevés et à des solutions innovantes, j'ai pu transformer chaque difficulté en opportunité d'apprentissage et d'amélioration.
+      </p>
+    </section>
+
+    <!-- Dashboard synthétique des compétences -->
+    <section class="section">
+      <h2>Mes Progrès en un Coup d'Œil</h2>
+      <div class="dashboard">
+        <div class="progress-card">
+          <h3>Réseaux</h3>
+          <div class="progress-bar-container">
+            <div class="progress-bar" style="width: 90%;"></div>
+          </div>
+          <div class="progress-details">90% - Maîtrise des configurations réseau, VLANs, routage, etc.</div>
+        </div>
+        <div class="progress-card">
+          <h3>Mathématiques</h3>
+          <div class="progress-bar-container">
+            <div class="progress-bar" style="width: 80%;"></div>
+          </div>
+          <div class="progress-details">80% - Calculs, algorithmes et modélisations.</div>
+        </div>
+        <div class="progress-card">
+          <h3>Télécoms</h3>
+          <div class="progress-bar-container">
+            <div class="progress-bar" style="width: 75%;"></div>
+          </div>
+          <div class="progress-details">75% - Mesure de signaux, analyses et tests sur supports...</div>
+        </div>
+        <div class="progress-card">
+          <h3>Anglais</h3>
+          <div class="progress-bar-container">
+            <div class="progress-bar" style="width: 70%;"></div>
+          </div>
+          <div class="progress-details">70% - Techniques de communication et rédaction technique.</div>
+        </div>
+        <div class="progress-card">
+          <h3>Developpement Web</h3>
+          <div class="progress-bar-container">
+            <div class="progress-bar" style="width: 85%;"></div>
+          </div>
+          <div class="progress-details">85% - Intégration, DOM et design responsive.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Autoévaluation globale -->
+    <section class="section">
+      <h2>Mes Apprentissages & Défis</h2>
+      <p>
+        Mon portfolio témoigne d'une réelle progression, avec des projets variés qui m'ont confronté à des difficultés techniques, 
+        organisationnelles et méthodologiques. Dans l'ensemble, ces expériences m'ont permis de renforcer ma capacité à résoudre des problèmes complexes et à m'adapter rapidement.
+      </p>
+      <table class="evaluation-table">
+        <thead>
+          <tr>
+            <th>Problème rencontré</th>
+            <th>Solution envisagée / mise en œuvre</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Manque de temps généralisé nécessitant de travailler tard pour finaliser des projets.</td>
+            <td>Planification améliorée avec répartition claire des tâches et calendrier de révision.</td>
+          </tr>
+          <tr>
+            <td>Problèmes techniques en réseau (difficulté de connexion à Proxmox, vérifications de brassage).</td>
+            <td>Mise en place d'un protocole de vérification rapide et déplacement dans la salle appropriée pour résoudre rapidement les problèmes.</td>
+          </tr>
+          <tr>
+            <td>Défis en télécommunications pour l'analyse des signaux et préparation aux QCM.</td>
+            <td>Séances de révision en groupe avec mes camarades de classe pour consolider et mettre à jour les connaissances.</td>
+          </tr>
+          <tr>
+            <td>Difficulté à rédiger en anglais et exprimer des idées techniques.</td>
+            <td>Utilisation de fiches de vocabulaire et d'exercices réguliers de rédaction technique pour améliorer la fluidité.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <a class="back-to-top" href="#top">Retour en haut</a>
   </main>
+
   <footer class="bg-blue-600 text-white text-center p-4 mt-10">
-    Portfolio Réseaux & Télécom © 2025
+    Portfolio Ho Koloina RAVELOSON 2025
   </footer>
 </body>
 </html>
