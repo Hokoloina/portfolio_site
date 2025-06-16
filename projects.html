@@ -475,8 +475,8 @@
 
           <p><strong>Preuves :</strong></p>
           <div class="proof-container">
-            <a href="pdf/compte_rendu_photometrie.pdf" download class="proof-item">
-              <img src="img/icon.png" alt="Compte rendu PDF">
+            <a href="pdf/rapport_SAE_15PITOIS_RAVELOSON.pdf" download class="proof-item">
+              <img src="img/images.png" alt="Compte rendu PDF">
               <p>Télécharger le compte rendu PDF</p>
             </a>
             <!-- Autre preuve éventuelle ici -->
@@ -492,16 +492,113 @@
           <i class="fas fa-building"></i> Construction d'un réseau informatique pour une petite structure
         </h2>
         <button class="toggle-details">Voir plus</button>
-        <div class="project-details">
-          <p><strong>Description :</strong> [À compléter]</p>
-          <p><strong>Objectif :</strong> [À compléter]</p>
-          <p><strong>Apprentissage critique :</strong> [À compléter]</p>
-          <p><strong>Tâches réalisées :</strong> [À compléter]</p>
-          <p><strong>Résultat :</strong> [À compléter]</p>
-          <p><strong>Preuves :</strong> [À compléter]</p>
-          <p><strong>Autocritique :</strong> [À compléter]</p>
+
+        <div class="project-details" style="overflow-y: auto;">
+          <p><strong>Description :</strong>
+            Ce projet SAE21 visait à mettre en œuvre un environnement Windows sur Proxmox et à intégrer une station
+            Windows 10 au sein d’un domaine Active Directory.
+            Parallèlement, nous avons suivi les cours Cisco NetAcad pour approfondir nos connaissances en réseaux et
+            préparé un QCM Microsoft portant sur la sécurité des environnements Windows ADDS.
+          </p>
+
+          <p><strong>Objectifs :</strong></p>
+          <ul>
+            <li>Installer une VM Windows Server 2019 sur Proxmox avec les pilotes Virtio et la configuration nécessaire.
+            </li>
+            <li>Promouvoir le serveur en contrôleur de domaine (AD DS avec service DNS intégré).</li>
+            <li>Gérer les comptes d'utilisateurs, les groupes, et configurer des stratégies de groupe (GPO).</li>
+            <li>Intégrer une station Windows 10 au domaine.</li>
+            <li>Suivre le cours Cisco NetAcad (Switching, Routing, Wireless Essentials) et valider les examens associés.
+            </li>
+            <li>Préparer et passer le QCM Microsoft sur la sécurité des environnements Windows ADDS.</li>
+          </ul>
+
+          <p><strong>Apprentissages critiques :</strong></p>
+          <ul>
+            <li>Comprendre l'architecture et les fondements des systèmes numériques, les principes du codage de
+              l'information, des communications et de l'Internet.</li>
+            <li>Configurer les fonctions de base du réseau local.</li>
+            <li>Maîtriser les rôles et les principes fondamentaux des systèmes d'exploitation afin d'interagir avec
+              ceux-ci pour la configuration et l'administration des réseaux et services fournis.</li>
+            <li>Identifier les dysfonctionnements du réseau local et savoir les signaler.</li>
+            <li>Installer un poste client et expliquer la procédure mise en place.</li>
+          </ul>
+
+          <p><strong>Tâches réalisées :</strong></p>
+          <ul>
+            <li>Création de la VM Windows Server 2019 sur Proxmox, configuration des ressources et chargement des
+              pilotes Virtio (disque, GPU, réseau).</li>
+            <li>Installation du système Windows Server 2019, modification des paramètres système et résolution via le
+              Gestionnaire de périphériques.</li>
+            <li>Promotion du serveur en contrôleur de domaine avec installation du rôle AD DS et configuration du
+              service DNS.</li>
+            <li>Création et gestion des comptes d'utilisateurs, des groupes, des OU et des stratégies de groupe (GPO)
+              pour sécuriser l’environnement.</li>
+            <li>Intégration d'une VM Windows 10 au domaine et vérification de la résolution DNS et des droits d’accès.
+            </li>
+            <li>Suivi du cours Cisco NetAcad et réalisation des examens Checkpoint, Blanc, et Final.</li>
+            <li>Préparation au QCM Microsoft sur la sécurité ADDS en visionnant les supports vidéos et en étudiant les
+              diapositives.</li>
+          </ul>
+
+          <p><strong>Résultats :</strong></p>
+          <p>
+            L’environnement Windows Server est opérationnel et la station Windows 10 a été intégrée avec succès au
+            domaine.
+            Les stratégies de groupe ont été appliquées, et la préparation aux examens Cisco ainsi qu'au QCM Microsoft a
+            permis de valider mes acquis.
+            Score cisco: 87/100
+          </p>
+
+          <p><strong>Autoévaluation :</strong></p>
+          <p>
+            <em>Évaluation globale :</em> Ce TP SAE21 a constitué un défi technique important. Malgré des difficultés
+            liées à la configuration des GPO et à la gestion des comptes,
+            l'expérience m'a permis de mieux comprendre l'intégration d'un poste client dans un domaine et de consolider
+            mes compétences en réseaux.
+            La charge de travail, combinée aux exigences des cours Cisco NetAcad et du QCM Microsoft, a demandé une
+            organisation rigoureuse et une révision continue.
+          </p>
+
+          <table style="width:100%; border-collapse: collapse;" border="1">
+            <thead>
+              <tr>
+                <th style="padding: 8px; text-align: left;">Problème rencontré</th>
+                <th style="padding: 8px; text-align: left;">Solution envisagée ou mise en œuvre</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding: 8px;">Charge de travail élevée entre le TP noté, les cours Cisco et le QCM
+                  Microsoft.</td>
+                <td style="padding: 8px;">Planification minutieuse et révision quotidienne pour répartir efficacement
+                  les tâches.</td>
+              </tr>
+              <tr>
+                <td style="padding: 8px;">Difficultés de configuration sur Windows Server (création des groupes,
+                  application des GPO).</td>
+                <td style="padding: 8px;">Consultation approfondie de la documentation et tutoriels Microsoft pour
+                  maîtriser ces aspects.</td>
+              </tr>
+              <tr>
+                <td style="padding: 8px;">Problèmes de connectivité sur Proxmox ralentissant l'installation.</td>
+                <td style="padding: 8px;">Vérification rigoureuse de la configuration réseau et correction des erreurs
+                  de connectivité.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p><strong>Preuves :</strong></p>
+          <div class="proof-container">
+            <a href="pdf/Planning_SAE21_2024_25_v1-1.pdf" download class="proof-item">
+              <img src="img/rese.jpg" alt="Planning SAE21">
+              <p>Consulter le planning SAE21</p>
+            </a>
+          </div>
         </div>
       </section>
+
+
 
       <!-- Projet 7 : Mesure et caractérisation d'un signal ou un système -->
       <section class="project-card bg-white p-6 shadow-lg rounded-lg">
@@ -760,7 +857,8 @@
             <li>Concevoir et configurer une maquette réseau en mobilisant les connaissances acquises.</li>
             <li>Evaluer les notions techniques et pratiques en réseaux.</li>
             <li>Appliquer des méthodes de calculs et algorithmes issus des cours de mathématiques.</li>
-            <li>Réaliser des mesures et analyses en télécommunications (signal, transmission) et en extraire des résultats pertinents.</li>
+            <li>Réaliser des mesures et analyses en télécommunications (signal, transmission) et en extraire des
+              résultats pertinents.</li>
             <li>Réviser et maîtriser le vocabulaire technique en anglais pour rédiger une synthèse de l’année.</li>
           </ul>
 
@@ -855,11 +953,21 @@
 
           <p><strong>Preuves :</strong></p>
           <div class="proof-container">
-            <a href="pdf/sae204.pdf" download class="proof-item">
-              <img src="img/sae204.PNG" alt="Compte rendu du projet SAÉ 2.04">
-              <p>Télécharger le compte rendu SAÉ 2.04</p>
+            <a href="pdf/schéma-logique-SAE24.pdf" download class="proof-item">
+              <img src="img/log.jpg" alt="Schéma logique PDF">
+              <p>Télécharger le schéma logique</p>
+            </a>
+            <a href="pdf/Schéma physique.pdf" download class="proof-item">
+              <img src="img/phy.jpg" alt="Schéma physique PDF">
+              <p>Télécharger le schéma physique</p>
+            </a>
+            <a href="pdf/Diagramme de Gantt prévisionnel.pdf" download class="proof-item">
+              <img src="img/gant.jpg" alt="Diagramme de Gantt PDF">
+              <p>Télécharger le diagramme de Gantt</p>
             </a>
           </div>
+          </a>
+        </div>
         </div>
       </section>
 
