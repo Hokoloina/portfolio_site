@@ -87,12 +87,19 @@
         <p>De plus, mes expériences récentes d'<strong>animatrice</strong> pendant l'été 2025 auprès des jeunes renforcent mon sens des responsabilités, ma capacité à encadrer des groupes et mon dynamisme.</p>
       </div>
       
-      <div class="photo-container" style="display: flex; flex-direction: column; gap: 15px;">
-        <img src="img/voyage.jpg" alt="Voyage et Nature" class="voyage-picture" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+      <div class="photo-container" style="display: flex; flex-direction: column; gap: 20px; align-items: center;">
         
-        <img src="img/anim.jpg" alt="Animatrice en action" class="voyage-picture" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+        <img src="img/voyage.jpg" alt="Voyage et Nature" class="voyage-picture" 
+             style="width: 100%; max-width: 350px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); object-fit: cover; transition: transform 0.3s ease;" 
+             onmouseover="this.style.transform='scale(1.05)'" 
+             onmouseout="this.style.transform='scale(1)'" />
+        
+        <img src="img/anim.jpg" alt="Animatrice en action" class="anim-picture" 
+             style="width: 100%; max-width: 350px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); object-fit: cover; transition: transform 0.3s ease;" 
+             onmouseover="this.style.transform='scale(1.05)'" 
+             onmouseout="this.style.transform='scale(1)'" />
+      
       </div>
-    </section>
   </main>
   <footer class="bg-blue-600 text-white text-center p-4 mt-10">
     Portfolio Ho Koloina RAVELOSON 2026
@@ -121,7 +128,7 @@
 
   <script>
     // Ouvre le modal pour les images "stage" et "bac"
-    document.querySelectorAll('.stage-picture, .bac-picture, .anim-picture').forEach(img => {
+    document.querySelectorAll('.stage-picture, .bac-picture').forEach(img => {
       img.addEventListener('click', function () {
         const modal = document.getElementById('image-modal');
         const modalImg = document.getElementById('modal-image');
