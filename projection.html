@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Projection Globale - Portfolio Ho Koloina RAVELOSON 2025</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Projection Globale - Portfolio Ho Koloina RAVELOSON 2026</title>
+  <link rel="stylesheet" href="style.css">
   <style>
     /* Couleurs et variables */
     :root {
@@ -107,8 +107,8 @@
       background: var(--secondary);
       color: white;
     }
-    /* Bouton retour en haut */
-    a.back-to-top {
+    /* Bouton retour accueil */
+    a.back-to-home {
       display: inline-block;
       margin-top: 2rem;
       padding: 0.5rem 1.5rem;
@@ -117,38 +117,58 @@
       border-radius: 8px;
       text-decoration: none;
       transition: background 0.3s;
+      text-align: center;
     }
-    a.back-to-top:hover {
+    a.back-to-home:hover {
       background: var(--dark);
+    }
+    .center-btn {
+        text-align: center;
     }
   </style>
 </head>
 <body id="top">
   <header>
     <h1>Projection Globale</h1>
-    <p>Mon portfolio en un coup d'œil : progrès, défis et apprentissages</p>
+    <p>Mon portfolio en un coup d'œil : progrès, défis et apprentissages (BUT1 & BUT2)</p>
   </header>
 
   <main>
-    <!-- Section d'évaluation globale -->
     <section class="section">
       <h2>Évaluation Globale</h2>
       <p>
-        Cette page synthétise l'ensemble de mes projets réalisés au cours de l'année. Elle reflète l'évolution de mes compétences techniques dans les domaines des réseaux, des mathématiques, des télécommunications et de l'anglais. Grâce à des défis relevés et à des solutions innovantes, j'ai pu transformer chaque difficulté en opportunité d'apprentissage et d'amélioration.
+        Cette page synthétise l'ensemble de mon parcours sur deux années. Elle reflète l'évolution de mes compétences techniques, passant des fondamentaux (Maths, Web, Réseaux de base) à des domaines d'expertise plus pointus comme la <strong>cybersécurité</strong> et l'architecture système complexe.
       </p>
     </section>
 
-    <!-- Dashboard synthétique des compétences -->
     <section class="section">
       <h2>Mes Progrès en un Coup d'Œil</h2>
       <div class="dashboard">
+        
         <div class="progress-card">
           <h3>Réseaux</h3>
           <div class="progress-bar-container">
-            <div class="progress-bar" style="width: 90%;"></div>
+            <div class="progress-bar" style="width: 75%;"></div>
           </div>
-          <div class="progress-details">90% - Maîtrise des configurations réseau, VLANs, routage, etc.</div>
+          <div class="progress-details">75% - Configuration avancée (OSPF, IPv6), mais vigilance accrue sur la sécurité.</div>
         </div>
+
+        <div class="progress-card">
+          <h3>Cybersécurité</h3>
+          <div class="progress-bar-container">
+            <div class="progress-bar" style="width: 80%;"></div>
+          </div>
+          <div class="progress-details">80% - Audit , Pentest, Analyse de vulnérabilités.</div>
+        </div>
+
+        <div class="progress-card">
+          <h3>Systèmes & Services</h3>
+          <div class="progress-bar-container">
+            <div class="progress-bar" style="width: 85%;"></div>
+          </div>
+          <div class="progress-details">85% - Virtualisation, DNS/DHCP, Linux Server.</div>
+        </div>
+
         <div class="progress-card">
           <h3>Mathématiques</h3>
           <div class="progress-bar-container">
@@ -156,36 +176,38 @@
           </div>
           <div class="progress-details">80% - Calculs, algorithmes et modélisations.</div>
         </div>
+
         <div class="progress-card">
-          <h3>Télécoms</h3>
-          <div class="progress-bar-container">
-            <div class="progress-bar" style="width: 75%;"></div>
-          </div>
-          <div class="progress-details">75% - Mesure de signaux, analyses et tests sur supports...</div>
-        </div>
-        <div class="progress-card">
-          <h3>Anglais</h3>
-          <div class="progress-bar-container">
-            <div class="progress-bar" style="width: 70%;"></div>
-          </div>
-          <div class="progress-details">70% - Techniques de communication et rédaction technique.</div>
-        </div>
-        <div class="progress-card">
-          <h3>Developpement Web</h3>
+          <h3>Développement Web</h3>
           <div class="progress-bar-container">
             <div class="progress-bar" style="width: 85%;"></div>
           </div>
           <div class="progress-details">85% - Intégration, DOM et design responsive.</div>
         </div>
+
+        <div class="progress-card">
+          <h3>Télécoms</h3>
+          <div class="progress-bar-container">
+            <div class="progress-bar" style="width: 75%;"></div>
+          </div>
+          <div class="progress-details">75% - Transmission fibre, Boucle locale, Analyse de signaux.</div>
+        </div>
+        
+        <div class="progress-card">
+          <h3>Anglais Technique</h3>
+          <div class="progress-bar-container">
+            <div class="progress-bar" style="width: 75%;"></div>
+          </div>
+          <div class="progress-details">75% - Lecture de documentation (RFC, CVE), rédaction.</div>
+        </div>
+
       </div>
     </section>
 
-    <!-- Autoévaluation globale -->
     <section class="section">
       <h2>Mes Apprentissages & Défis</h2>
       <p>
-        Mon portfolio témoigne d'une réelle progression, avec des projets variés qui m'ont confronté à des difficultés techniques, 
-        organisationnelles et méthodologiques. Dans l'ensemble, ces expériences m'ont permis de renforcer ma capacité à résoudre des problèmes complexes et à m'adapter rapidement.
+        Mon portfolio témoigne d'une réelle progression. J'ai conservé mes acquis de première année tout en relevant les défis de la deuxième année, notamment en sécurité et en travail d'équipe.
       </p>
       <table class="evaluation-table">
         <thead>
@@ -195,31 +217,43 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Manque de temps généralisé nécessitant de travailler tard pour finaliser des projets.</td>
-            <td>Planification améliorée avec répartition claire des tâches et calendrier de révision.</td>
+           <tr>
+            <td><strong>Sécurité Réseau :</strong> Oubli de sécurisation (OSPF non authentifié, ports inactifs ouverts) lors de la conception maquette.</td>
+            <td>Mise en place systématique d'une checklist de "Hardening" avant livraison (shutdown des ports inutilisés, auth des protocoles).</td>
+          </tr>
+           <tr>
+            <td><strong>Pentest :</strong> Difficulté à scanner un réseau cible silencieux ou à casser des mots de passe complexes.</td>
+            <td>Utilisation de scans ciblés (ports spécifiques admin) et adaptation des attaques par dictionnaire/masque (Hashcat).</td>
           </tr>
           <tr>
-            <td>Problèmes techniques en réseau (difficulté de connexion à Proxmox, vérifications de brassage).</td>
-            <td>Mise en place d'un protocole de vérification rapide et déplacement dans la salle appropriée pour résoudre rapidement les problèmes.</td>
+            <td><strong>Projet PolyLED :</strong> Coordination difficile entre l'équipe Services (DNS/DHCP) et l'équipe Infra (Routage).</td>
+            <td>Maquettage local des services pour avancer sans attendre le réseau global, et points de synchronisation fréquents.</td>
+          </tr>
+          
+          <tr>
+            <td>Manque de temps généralisé sur les projets.</td>
+            <td>Planification améliorée (Gantt) et répartition claire des tâches.</td>
           </tr>
           <tr>
-            <td>Défis en télécommunications pour l'analyse des signaux et préparation aux QCM.</td>
-            <td>Séances de révision en groupe avec mes camarades de classe pour consolider et mettre à jour les connaissances.</td>
+            <td>Problèmes techniques en réseau (connexion Proxmox, brassage).</td>
+            <td>Protocole de vérification rapide et déplacement en salle serveur.</td>
           </tr>
           <tr>
-            <td>Difficulté à rédiger en anglais et exprimer des idées techniques.</td>
-            <td>Utilisation de fiches de vocabulaire et d'exercices réguliers de rédaction technique pour améliorer la fluidité.</td>
+            <td>Difficulté à rédiger en anglais technique.</td>
+            <td>Utilisation de fiches de vocabulaire et lecture de documentations officielles.</td>
           </tr>
         </tbody>
       </table>
     </section>
 
-    <a class="back-to-top" href="#top">Retour en haut</a>
+    <div class="center-btn">
+        <a class="back-to-home" href="index.html">Retour à l'accueil</a>
+    </div>
+    
   </main>
 
   <footer class="bg-blue-600 text-white text-center p-4 mt-10">
-    Portfolio Ho Koloina RAVELOSON 2025
+    Portfolio Ho Koloina RAVELOSON 2026
   </footer>
 </body>
 </html>
