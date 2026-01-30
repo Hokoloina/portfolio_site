@@ -974,6 +974,108 @@
 
 
 
+      <!-- Projet 10 : Mettre en œuvre un système de transmission et Déployer un réseau multi-sites -->
+      <section class="project-card bg-white p-6 shadow-lg rounded-lg">
+      <h2 class="text-lg font-bold mb-2">
+        <i class="fas fa-network-wired"></i> Mise en œuvre d'un système de transmission et Déploiement d'un réseau multi-sites
+      </h2>
+      <button class="toggle-details">Voir plus</button>
+      
+      <div class="project-details" style="overflow-y: auto;">
+        <p><strong>Description :</strong>
+          Ce projet intégratif combine les SAÉ 3.01 et 3.02. Nous avons simulé l'activité de l'opérateur "Krypcom" pour moderniser l'infrastructure du client "PolyLED". 
+          La mission consistait à interconnecter deux sites distants (Caen et Lyon) via une boucle locale (Transmission) et à déployer l'ensemble des services réseaux et systèmes critiques (Réseau multi-sites).
+          En tant que membre du groupe Bravo, j'étais spécifiquement responsable du lot <strong>DNS/DHCP</strong> au sein de l'équipe Services.
+        </p>
+
+        <p><strong>Objectifs :</strong></p>
+        <ul>
+          <li><strong>Transmission :</strong> Comprendre et mettre en œuvre l'interconnexion physique des sites (boucle fibre, OADM).</li>
+          <li><strong>Réseau Multi-sites :</strong> Déployer une architecture système complète sur hyperviseur Proxmox et assurer la continuité de service entre les sites.</li>
+          <li>Mettre en place les services de résolution de noms (DNS Bind9) et d'adressage dynamique (ISC-DHCP).</li>
+          <li>Assurer l'interopérabilité avec le groupe Infrastructure (VLANs, routage OSPF).</li>
+        </ul>
+
+        <p><strong>Apprentissages critiques  :</strong></p>
+        <ul>
+          <li><strong>Déployer et caractériser des systèmes de transmissions complexes :</strong> Mise en œuvre de la boucle locale et fibre optique.</li>
+          <li><strong>Mettre en place une connexion multi-site via un réseau opérateur :</strong> Interconnexion des sites Caen et Lyon.</li>
+          <li><strong>Administrer les réseaux d’accès des opérateurs :</strong> Configuration des accès WAN et du routage.</li>
+          <li><strong>Capacité à questionner un cahier des charges R&T :</strong> Analyse des besoins PolyLED et adaptation des choix techniques.</li>
+          <li><strong>Développer une application à partir d’un cahier des charges donné, pour le Web ou les périphériques mobiles :</strong> Déploiement des services web Nextcloud et interfaces d'administration.</li>
+          <li><strong>Utiliser un protocole réseau pour programmer une application client/serveur :</strong> Configuration avancée des protocoles d'échanges DNS/DHCP.</li>
+          <li><strong>Installer, administrer un système de gestion de données :</strong> Gestion des bases de données utilisateurs LDAP et fichiers Nextcloud.</li>
+          <li><strong>Accéder à un ensemble de données depuis une application et/ou un site web :</strong> Intégration LDAP pour l'authentification centralisée des services Web.</li>
+          <li><strong>Comprendre des documents techniques en anglais :</strong> Lecture des documentations officielles Bind9, ISC-DHCP et standards RFC.</li>
+          <li><strong>Administrer les protections contre les logiciels malveillants :</strong> Sécurisation des serveurs et des services exposés.</li>
+        </ul>
+
+        <p><strong>Tâches réalisées :</strong></p>
+        <ul>
+          <li>Installation et configuration du serveur <strong>DNS (Bind9)</strong> : création de la zone "polyled.com", configuration des forwarders et gestion du cache pour l'optimisation.</li>
+          <li>Mise en place du serveur <strong>DHCP (ISC-DHCP-Server)</strong> : définition des plages d'adresses pour les VLANs RH, Admin et Production.</li>
+          <li>Intégration des services dans l'architecture virtualisée <strong>Proxmox</strong> du groupe.</li>
+          <li>Collaboration avec l'équipe Infrastructure pour aligner le plan d'adressage IP et valider le routage inter-VLAN sur l'infrastructure multi-sites.</li>
+          <li>Rédaction des procédures techniques (PTI) pour assurer la maintenabilité de la solution.</li>
+        </ul>
+
+        <p><strong>Résultats :</strong></p>
+        <p>
+          Le projet a abouti à une infrastructure fonctionnelle avec une connectivité de bout en bout validée entre les sites. 
+          Le service DNS assure correctement la résolution interne et externe, et le DHCP distribue les IP dynamiquement à travers les différents VLANs grâce aux relais configurés.
+          Malgré des pannes matérielles initiales, les délais ont été respectés.
+        </p>
+
+        <p><strong>Autoévaluation :</strong></p>
+        <p>
+          <em>Évaluation globale :</em> Ce projet m'a permis de passer d'une configuration théorique à un déploiement réel en équipe avec de fortes interdépendances. 
+          J'ai renforcé ma rigueur dans la gestion des services Linux critiques. La principale difficulté a été la coordination avec le groupe Infrastructure, car nos services dépendaient de leur réseau (Transmission/Routage) pour être testés pleinement.
+        </p>
+
+        <table style="width:100%; border-collapse: collapse;" border="1">
+          <thead>
+            <tr>
+              <th style="padding: 8px; text-align: left;">Problème rencontré</th>
+              <th style="padding: 8px; text-align: left;">Solution envisagée ou mise en œuvre</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding: 8px;">Panne matérielle (disques RAID) sur le serveur principal au début du projet.</td>
+              <td style="padding: 8px;">Mise en place d'une stratégie de maquettage sur des VMs locales pour avancer la configuration en attendant la réparation.</td>
+            </tr>
+            <tr>
+              <td style="padding: 8px;">Retard et instabilité de l'infrastructure réseau (VLANs/Routage) fournie par le groupe Alpha.</td>
+              <td style="padding: 8px;">Connexion temporaire du serveur Proxmox hors maquette pour installer les paquets, puis coordination étroite pour valider le plan d'adressage IP.</td>
+            </tr>
+            <tr>
+              <td style="padding: 8px;">Le service NTP (Temps) est resté en erreur malgré l'installation.</td>
+              <td style="padding: 8px;">Solution future : Vérifier les règles de pare-feu (port 123 UDP) et la configuration des stratums dans <code>chrony.conf</code> pour qu'il se synchronise sur une source externe fiable.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p><strong>Preuves :</strong></p>
+        <div class="proof-container">
+          <a href="pdf/PTI-DNS.pdf" download class="proof-item">
+            <img src="img/ptidns.jpg" alt="Icone PDF DNS"> <p>Télécharger PTI DNS</p>
+          </a>
+          <a href="pdf/PTI-DHCP(1).doc" download class="proof-item">
+            <img src="img/ptidhcp.jpg" alt="Icone PDF DHCP"> <p>Télécharger PTI DHCP</p>
+          </a>
+          <a href="pdf/presentation.pdf" download class="proof-item">
+            <img src="img/presentation.jpg" alt="Icone Présentation"> <p>Voir la présentation de groupe</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+      
+
+      
+
+
+
   </main>
 
   <footer class="bg-blue-600 text-white text-center p-4 mt-10">
